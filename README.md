@@ -3,6 +3,13 @@
 - [Positron](https://positron.posit.co/) (VScode like IDE)
   
 ---  
-## Step 1  
+## Step 1.  
 Clone this repository.  
+e.g. `git clone https://github.com/hiroakif93/R_podman.git your-project-name`  
 
+## Step 2.  
+Modify `Conteinerfile` if necessaly.  
+- e.g. when you want to change R version, modify line1 in `Conteinerfile`.  
+- Please see [rocker](https://hub.docker.com/_/r-base) which docker image for R.  
+
+## Step 3.

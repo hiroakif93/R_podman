@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN R -q -e "install.packages(c('renv'), repos='https://cloud.r-project.org')"
+RUN R -q -e "install.packages(c('renv', 'tidyverse', 'devtools', 'Rcpp', 'ggplot2','languageserver','httpgd'), repos='https://cloud.r-project.org')"
+RUN R -q -e "devtools::install_github('hiroakif93/R-functions/AnalysisHelper', force=TRUE)"
 
 WORKDIR /workspaces/project

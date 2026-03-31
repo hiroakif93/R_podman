@@ -1,0 +1,62 @@
+{
+  "dev.containers.enable": true,
+
+  "workbench.colorTheme": "Default Light Modern",
+
+  "editor.fontFamily": "JetBrains Mono, SF Mono, Menlo, Monaco, Consolas, monospace",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+
+  "terminal.integrated.fontFamily": "JetBrains Mono, SF Mono, Menlo, Monaco, Consolas, monospace",
+  "terminal.integrated.fontSize": 14,
+
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "window.zoomLevel": 0,
+
+  "workbench.activityBar.location": "default",
+  "workbench.panel.defaultLocation": "bottom",
+
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#e7e7e7",
+    "activityBar.foreground": "#505050",
+    "activityBar.inactiveForeground": "#b0b0b0",
+    "activityBar.border": "#9c9c9c",
+
+    "editor.background": "#fdfdfd",
+    "editorLineNumber.foreground": "#9e9e9e",
+    "editorLineNumber.activeForeground": "#555555",
+
+    "editorGroup.border": "#d8d8d8",
+    "editorGroupHeader.tabsBackground": "#e8e8e8",
+    "editorGroupHeader.tabsBorder": "#d8d8d8",
+
+    "tab.activeBackground": "#f4f4f4",
+    "tab.inactiveBackground": "#eeeeee",
+    "tab.border": "#c4c4c4",
+
+    "terminal.background": "#ececec",
+    "terminal.foreground": "#333333",
+    "panel.background": "#e9e9e9",
+    "panel.border": "#d0d0d0"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "strings": "#228B22"
+  },
+
+  "[r]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[rmd]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+
+  "[quarto]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  }
+}
