@@ -1,6 +1,6 @@
 ## Requirements  
 - [Podman](https://podman.io/)  
-- [Positron[(https://positron.posit.co/) (VScode like IDE)
+- [Positron](https://positron.posit.co/) (VScode like IDE)
   
 ---  
 ## Step 1  
