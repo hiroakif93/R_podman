@@ -1,6 +1,10 @@
 FROM rocker/r-ver:4.5.1
 
+ARG VSEARCH="2.30.6"
+
 ENV DEBIAN_FRONTEND=noninteractive
+ENV OPENBLAS_NUM_THREADS=4
+
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
@@ -21,10 +25,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libjpeg-dev \
     zlib1g-dev \
     pandoc \
+    libopenblas-dev \
+    gcc \
+    g++ \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN R -q -e "install.packages(c('renv', 'tidyverse', 'devtools', 'Rcpp', 'ggplot2','languageserver','httpgd'), repos='https://cloud.r-project.org')"
-RUN R -q -e "devtools::install_github('hiroakif93/R-functions/AnalysisHelper', force=TRUE)"
+RUN R -q -e "install.packages(c('renv', 'tidyverse', 'remotes', 'Rcpp', 'ggplot2','languageserver','httpgd'), repos='https://cloud.r-project.org')"
+RUN R -q -e "remotes::install_github('hiroakif93/R-functions/AnalysisHelper', force=TRUE)"
 
 WORKDIR /workspaces/project

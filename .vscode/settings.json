@@ -1,7 +1,7 @@
 {
   "dev.containers.enable": true,
 
-  "workbench.colorTheme": "Default Light Modern",
+  "workbench.colorTheme": "Light Modern",
 
   "editor.fontFamily": "JetBrains Mono, SF Mono, Menlo, Monaco, Consolas, monospace",
   "editor.fontSize": 16,
